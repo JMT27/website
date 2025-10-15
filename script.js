@@ -47,7 +47,7 @@ contactForm.addEventListener('submit', async (e) => {
 // Download CV functionality
 function downloadPDF() {
   const link = document.createElement('a');
-  link.href = 'cv.pdf';
+  link.href = 'James-Tanuwijaya-CV.pdf';
   link.download = 'James-Tanuwijaya-CV.pdf';
   document.body.appendChild(link);
   link.click();
