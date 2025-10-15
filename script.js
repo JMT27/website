@@ -43,3 +43,13 @@ contactForm.addEventListener('submit', async (e) => {
     alert('Oops! Ada masalah saat mengirim pesan. Silakan coba lagi.');
   }
 });
+
+// Download CV functionality
+function downloadPDF() {
+  const link = document.createElement('a');
+  link.href = 'cv.pdf';
+  link.download = 'James-Tanuwijaya-CV.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
